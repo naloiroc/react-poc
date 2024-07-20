@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Camera, CameraProps } from 'react-camera-pro';
+import { Camera } from 'react-camera-pro';
 
 const CameraComponent = () => {
   // 明確定義 ref 的類型
