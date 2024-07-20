@@ -15,10 +15,19 @@ const CameraComponent = () => {
 
   return (
     <div>
-      <Camera ref={cameraRef} aspectRatio={16 / 9} errorMessages={{
+      <div style={{maxWidth: "500px", position: "relative"}}>
+        <Camera ref={cameraRef} aspectRatio={16 / 9} errorMessages={{}} />
+        <button 
+          style={{
+            position: "absolute",
+            bottom: "12px",
+            left: "238px",
+          }} 
+          onClick={takePhoto}
+        >拍照</button>
 
-      }} />
-      <button onClick={takePhoto}>拍照</button>
+      </div>
+
       {image && (
         <div>
           <h2>拍攝的照片：</h2>
