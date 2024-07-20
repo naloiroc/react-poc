@@ -16,7 +16,12 @@ const CameraComponent = () => {
   return (
     <div>
       <div style={{maxWidth: "500px", position: "relative"}}>
-        <Camera ref={cameraRef} aspectRatio={16 / 9} errorMessages={{}} />
+        <Camera 
+          ref={cameraRef} 
+          aspectRatio={16 / 9} 
+          facingMode="environment"
+          errorMessages={{}} 
+        />
         <button 
           style={{
             position: "absolute",
